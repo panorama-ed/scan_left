@@ -6,15 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- Initial project structure
-- CHANGELOG.md based on keepachangelog.com 
-
-## [0.1.0] - Coming soon!
-### Added
 
 ### Changed
 
-### Removed
+### Removed 
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.1.0
+## [0.0.1] - 2020-05-06
+### Added
+- Initial gem project structure
+- Initial CHANGELOG.md based on keepachangelog.com
+
+[Unreleased]: https://github.com/panorama-ed/scan_left/compare/v0.0.1...HEAD
+[0.1.0]: https://github.com/panorama-ed/scan_left/releases/tag/v0.0.1
