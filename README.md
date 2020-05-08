@@ -1,7 +1,7 @@
 ![Tests](https://github.com/panorama-ed/scan_left/workflows/Tests/badge.svg)
 
 # scan_left
-A tiny Ruby gem to provide the 'scan_left' operation on any Ruby
+A tiny Ruby gem to provide the `#scan_left` operation on any Ruby
 `Enumerable`.
 
 ## What does it do?
