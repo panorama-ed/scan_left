@@ -1,2 +1,10 @@
 inherit_gem:
   panolint: rubocop.yml
+Metrics/BlockLength:
+  Exclude:
+    - scan_left.gemspec
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - Gemfile
+    - Rakefile
+    - bin/*
