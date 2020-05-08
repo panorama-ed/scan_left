@@ -9,7 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-### Removed 
+### Removed
+
+## [0.1.0] - 2020-05-08
+### Added
+- Initial implementation of `ScanLeft`
 
 ## [0.0.1] - 2020-05-06
 ### Added
