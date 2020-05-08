@@ -1,23 +1,32 @@
+# based on https://github.com/ruby/setup-ruby/blob/master/README.md
 name: Main
-on: push
+on: [push]
 jobs:
   ci:
     name: CI
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest ]
+        ruby: [ 2.4, 2.5, 2.6, 2.7, jruby, truffleruby ]
+    runs-on: ${{ matrix.os }}
     env:
       CI: true
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7
+        ruby-version: ${{ matrix.ruby }}
     - uses: actions/cache@v1
       with:
         path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        key: bundle-use-ruby-${{ matrix.os }}-${{ matrix.ruby }}-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: |
-          ${{ runner.os }}-gems-
-    - run: bundle config path vendor/bundle
-    - run: bundle install --jobs 4 --retry 3
+          bundle-use-ruby-${{ matrix.os }}-${{ matrix.ruby }}-
+    - name: bundle install
+      run: |
+        ruby -v
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
     - run: bundle exec rubocop
     - run: bundle exec rspec
