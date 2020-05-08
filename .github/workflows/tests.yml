@@ -1,5 +1,5 @@
 # based on https://github.com/ruby/setup-ruby/blob/master/README.md
-name: Main
+name: Tests
 on: [push, pull_request]
 jobs:
   ci:
