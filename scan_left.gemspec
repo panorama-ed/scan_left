@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
                      "any Ruby Enumerable."
   spec.description = spec.summary
   spec.homepage    = "https://github.com/panorama-ed/scan_left"
+  spec.license     = "MIT"
 
   if spec.respond_to?(:metadata)
     spec.metadata["allowed_push_host"] = "https://rubygems.org/" # allow pushes
