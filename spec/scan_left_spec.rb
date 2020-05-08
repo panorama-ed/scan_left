@@ -47,7 +47,7 @@ RSpec.describe ScanLeft do
 
       it_behaves_like "a_series_of_injects"
 
-      context "lazy" do
+      context "when lazy" do
         let(:enumerable) { super().lazy }
 
         it_behaves_like "a_series_of_injects"
