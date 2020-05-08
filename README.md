@@ -38,12 +38,12 @@ series.
 
 The key differences between `#inject` and `#scan_left` are:
 
-  1. Incremental results: `#scan_left` returns a series of results
+  1. **Incremental results**: `#scan_left` returns a series of results
      after processing each element of the input series. `#inject`
      returns a single value, which equals the final result in the
      series returned by `#scan_left`.
 
-  2. Laziness: `#scan_left` can preserve the laziness of the input
+  2. **Laziness**: `#scan_left` can preserve the laziness of the input
      series.  As each incremental result is read from the output
      series, the actual calculation is lazily performed against the
      input. `#inject` cannot be a a lazy operation in general, as its
