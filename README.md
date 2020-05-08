@@ -1,6 +1,12 @@
+# scan_left
 ![Tests](https://github.com/panorama-ed/scan_left/workflows/Tests/badge.svg)
 
-# scan_left
+[![Yard Docs](http://img.shields.io/badge/yard-docs-blue.svg)](http://rubydoc.info/github/ms-ati/docile)
+[![Docs Coverage](http://inch-ci.org/github/ms-ati/docile.png)](http://inch-ci.org/github/ms-ati/docile)
+
+[![Gem Version](https://img.shields.io/gem/v/scan_left.svg)](https://rubygems.org/gems/scan_left)
+[![Gem Downloads](https://img.shields.io/gem/dt/scan_left.svg)](https://rubygems.org/gems/scan_left)
+
 A tiny Ruby gem to provide the `#scan_left` operation on any Ruby
 `Enumerable`.
 
