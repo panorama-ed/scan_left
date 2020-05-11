@@ -53,8 +53,6 @@ The key differences between `#inject` and `#scan_left` are:
 ## Examples
 
 ```
-require 'scan_left'
-
 ScanLeft.new([]).scan_left(0) { |s, x| s + x } == [0]
 [].inject(0) { |s, x| s + x }                  == 0
 

@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Documentation link in gemspec to rubydoc.info
 
 ### Changed
+- Improved YARD doc formatting for RubyDoc.info
 
 ### Removed
 

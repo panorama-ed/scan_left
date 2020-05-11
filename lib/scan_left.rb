@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
+# Original author: [Marc Siegel](https://github.com/ms-ati).
 require "scan_left/version"
 
-# Original author: [Marc Siegel](https://github.com/ms-ati).
-
-# Provides the `#scan_left` operation on any Enumerable.
+# Provides the {#scan_left} operation on any Enumerable.
 class ScanLeft
+  # @return [Enumerable]  Stream to transform via {#scan_left}
   attr_reader :enumerable
 
-  # @param [Enumerable]  enumerable  Stream to transform via `scan_left`
+  # @param [Enumerable]  enumerable  Stream to transform via {#scan_left}
   def initialize(enumerable)
     @enumerable = enumerable
   end
@@ -20,16 +20,16 @@ class ScanLeft
   #
   # @return [Enumerable] Generate a stream of intermediate states
   #   resulting from applying a binary operator. Equivalent to a
-  #   stream of `#inject` calls on first N elements, increasing N from
+  #   stream of +#inject+ calls on first N elements, increasing N from
   #   zero to the size of the stream. NOTE: Preserves laziness if
-  #   `enumerable` is lazy.
+  #   +enumerable+ is lazy.
   #
   # @param initial [Object] Initial state value to yield.
   #
   # @yield [memo, obj] Invokes given block with previous state value
-  #   `memo` and next element of the stream `obj`.
+  #   +memo+ and next element of the stream +obj+.
   #
-  # @yieldreturn [Object] The next state value for `memo`.
+  # @yieldreturn [Object] The next state value for +memo+.
   def scan_left(initial)
     memo = initial
     outs = enumerable.map { |*obj| memo = yield(memo, *obj) }
