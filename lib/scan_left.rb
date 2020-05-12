@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 # Original author: [Marc Siegel](https://github.com/ms-ati).
+
+require "scan_left/enumerable_with_scan_left"
 require "scan_left/version"
 
 # Provides the {#scan_left} operation on any Enumerable.
