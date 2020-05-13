@@ -1,8 +1,8 @@
 # scan_left
 ![Tests](https://github.com/panorama-ed/scan_left/workflows/Tests/badge.svg)
 
-[![Yard Docs](http://img.shields.io/badge/yard-docs-blue.svg)](http://rubydoc.info/github/ms-ati/docile)
-[![Docs Coverage](http://inch-ci.org/github/ms-ati/docile.png)](http://inch-ci.org/github/ms-ati/docile)
+[![Yard Docs](http://img.shields.io/badge/yard-docs-blue.svg)](http://rubydoc.info/github/panorma-ed/scan_left)
+[![Docs Coverage](http://inch-ci.org/github/panorama-ed/scan_left.png)](http://inch-ci.org/github/panorama-ed/scan_left)
 
 [![Gem Version](https://img.shields.io/gem/v/scan_left.svg)](https://rubygems.org/gems/scan_left)
 [![Gem Downloads](https://img.shields.io/gem/dt/scan_left.svg)](https://rubygems.org/gems/scan_left)
