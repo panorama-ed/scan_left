@@ -55,7 +55,7 @@ The key differences between `#inject` and `#scan_left` are:
 ```ruby
 require "scan_left"
 
-# For comparison, results from #inject are included as well.
+# For comparison, results from #inject are shown as well:
 
 ScanLeft.new([]).scan_left(0) { |s, x| s + x } == [0]
 [].inject(0) { |s, x| s + x }                  == 0
@@ -66,9 +66,12 @@ ScanLeft.new([1]).scan_left(0) { |s, x| s + x } == [0, 1]
 ScanLeft.new([1, 2, 3]).scan_left(0) { |s, x| s + x } == [0, 1, 3, 6]
 [1, 2, 3].inject(0) { |s, x| s + x }                  == 6
 
-# To avoid explicitly using the `ScanLeft` class you can use the
-# provided refinement on Enumerable. This adds `#scan_left` directly
-# to Enumerable for a more concise syntax.
+# OPTIONAL: To avoid explicitly using the `ScanLeft` class, you may
+# choose to use the provided refinement on Enumerable. 
+#
+# This refinement adds a `#scan_left` method directly to Enumerable 
+# for a more concise syntax.
+
 using EnumerableWithScanleft
 
 [].scan_left(0) { |s, x| s + x }        => [0]
