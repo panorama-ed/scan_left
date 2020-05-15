@@ -1,16 +1,28 @@
 # frozen_string_literal: true
 
-# Original author: [Marc Siegel](https://github.com/ms-ati).
+# Original author: {Marc Siegel}[https://github.com/ms-ati].
 
 require "scan_left/enumerable_with_scan_left"
 require "scan_left/version"
 
-# Provides the {#scan_left} operation on any Enumerable.
+# Wraps any +Enumerable+ to provide the {#scan_left} operation.
+#
+# Please see {file:README.md} for details, examples, background, and further
+# reading about this operation.
+#
+# *Note:* if you'd prefer to use the {#scan_left} method directly on any
+# +Enumerable+ instance, please see the optional refinement
+# {EnumerableWithScanLeft}.
+#
+# @example
+#   ScanLeft.new([1, 2, 3]).scan_left(0) { |s, x| s + x } == [0, 1, 3, 6]
+#
+# @see EnumerableWithScanLeft
 class ScanLeft
-  # @return [Enumerable]  Stream to transform via {#scan_left}
+  # @return [Enumerable]  Enumerable to transform via {#scan_left}
   attr_reader :enumerable
 
-  # @param [Enumerable]  enumerable  Stream to transform via {#scan_left}
+  # @param enumerable [Enumerable]  Enumerable to transform via {#scan_left}
   def initialize(enumerable)
     @enumerable = enumerable
   end

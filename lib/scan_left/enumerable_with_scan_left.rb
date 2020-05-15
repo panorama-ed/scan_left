@@ -1,27 +1,30 @@
 # frozen_string_literal: true
 
-# This refines `Enumerable` to add a `#scan_left` method. This allows
-# for a more natural syntax than explicitly using the `ScanLeft`
-# class.
+# *Optional*
+# {refinement}[https://docs.ruby-lang.org/en/2.7.0/syntax/refinements_rdoc.html]
+# which refines +Enumerable+ to add a +#scan_left+ method, in order to provide
+# a more natural syntax in comparison to explicitly creating instances of the
+# +ScanLeft+ class.
 #
-# Without using this refinement:
-# ScanLeft.new([1,2,3]).scan_left(0, &:+) => [0, 1, 3, 6]
+# Without using this refinement, we wrap Enumerables in +ScanLeft+ instances:
 #
-# Using this refinement:
-# [1,2,3].scan_left(0, &:+)               => [0, 1, 3, 6]
+#   ScanLeft.new([1,2,3]).scan_left(0, &:+)  # => [0, 1, 3, 6]
 #
+# Using this refinement, we can call +#scan_left+ directly on any Enumerable:
 #
-# Example:
+#   [1,2,3].scan_left(0, &:+)                # => [0, 1, 3, 6]
 #
-# class Foo
-#   using EnumerableWithScanLeft
+# @example
+#   class Foo
+#     using EnumerableWithScanLeft
 #
-#   def bar(x)
-#     [1,2,3].scan_left(x, &:+)
+#     def bar(x)
+#       [1,2,3].scan_left(x, &:+)
+#     end
 #   end
-# end
 #
-# Foo.new.bar(10) => [10, 11, 13, 16]
+#   Foo.new.bar(10)  # => [10, 11, 13, 16]
+#
 module EnumerableWithScanLeft
   refine Enumerable do
     def scan_left(initial, &block)
