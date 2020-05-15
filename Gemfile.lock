@@ -12,7 +12,7 @@ GIT
 PATH
   remote: .
   specs:
-    scan_left (0.2.0)
+    scan_left (0.2.1)
 
 GEM
   remote: https://rubygems.org/
