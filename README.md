@@ -46,7 +46,7 @@ The key differences between `#inject` and `#scan_left` are:
   2. **Laziness**: `#scan_left` can preserve the laziness of the input
      series.  As each incremental result is read from the output
      series, the actual calculation is lazily performed against the
-     input. `#inject` cannot be a a lazy operation in general, as its
+     input. `#inject` cannot be a lazy operation in general, as its
      single result reflects a calculation across every element of the
      input series.
 
