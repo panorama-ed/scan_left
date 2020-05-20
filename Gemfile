@@ -5,4 +5,6 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 # Specify your gem's dependencies in scan_left.gemspec
 gemspec
 
-gem "panolint", github: "panorama-ed/panolint"
+group :development do
+  gem "panolint", github: "panorama-ed/panolint"
+end
