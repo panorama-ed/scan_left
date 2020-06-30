@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2020-06-30
+### Added
+- Dependabot configuration for automatic dependency update PRs
+- Added Parker Finch as a gem author in the gemspec!
+
+### Changed
+- Moved panolint to *development* dependency (oops!)
+- Fixed YARD docs link and other typos
+
 ## [0.2.1] - 2020-05-15
 ### Added
 - Additional documentation and examples
@@ -41,7 +50,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial gem project structure
 - Initial CHANGELOG.md based on keepachangelog.com
 
-[Unreleased]: https://github.com/panorama-ed/scan_left/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/panorama-ed/scan_left/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/panorama-ed/scan_left/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/panorama-ed/scan_left/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/panorama-ed/scan_left/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/panorama-ed/scan_left/compare/v0.0.1...v0.1.0
