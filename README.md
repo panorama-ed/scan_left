@@ -1,5 +1,5 @@
 # scan_left
-![Tests](https://github.com/panorama-ed/scan_left/workflows/Tests/badge.svg)
+[![Tests](https://github.com/panorama-ed/scan_left/workflows/Tests/badge.svg)](https://github.com/panorama-ed/scan_left/actions?query=workflow%3ATests)
 
 [![Yard Docs](http://img.shields.io/badge/yard-docs-blue.svg)](http://rubydoc.info/github/panorama-ed/scan_left)
 [![Docs Coverage](http://inch-ci.org/github/panorama-ed/scan_left.png)](http://inch-ci.org/github/panorama-ed/scan_left)
