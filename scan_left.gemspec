@@ -7,8 +7,9 @@ require "scan_left/version"
 Gem::Specification.new do |spec|
   spec.name        = "scan_left"
   spec.version     = ScanLeft::VERSION
-  spec.authors     = ["Marc Siegel"]
-  spec.email       = ["msiegel@panoramaed.com", "marc@usainnov.com"]
+  spec.authors     = ["Marc Siegel", "Parker Finch"]
+  spec.email       = ["marc@usainnov.com", "msiegel@panoramaed.com",
+                      "pfinch@panoramaed.com"]
 
   spec.summary     = "A tiny Ruby gem to provide the 'scan_left' operation on "\
                      "any Ruby Enumerable."
