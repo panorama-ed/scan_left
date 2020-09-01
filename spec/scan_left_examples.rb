@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.shared_examples "scan_left_examples" do
+RSpec.shared_examples "scan_left_examples" do |skip: false|
   # Uses the following lets:
   #   - enumerable  The stream to transform
   #   - initial     The initial value to use
@@ -24,7 +24,7 @@ RSpec.shared_examples "scan_left_examples" do
     end
   end
 
-  context "when summing ints" do
+  context "when summing ints", skip: skip do
     let(:initial) { 0 }
     let(:block) { ->(memo, obj) { memo + obj } }
 
@@ -53,7 +53,7 @@ RSpec.shared_examples "scan_left_examples" do
     end
   end
 
-  context "when using #with_index" do
+  context "when using #with_index", skip: skip do
     let(:initial) { 0 }
     let(:enumerable) { [1, 2, 3].each.with_index }
     let(:block) { ->(memo, obj, index) { memo + obj + index } }
