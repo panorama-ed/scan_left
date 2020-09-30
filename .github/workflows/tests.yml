@@ -29,4 +29,5 @@ jobs:
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
     - run: bundle exec rubocop
+      if: matrix.ruby == 2.7
     - run: bundle exec rspec
