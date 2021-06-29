@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
     spec.metadata["homepage_uri"] = spec.homepage
     spec.metadata["source_code_uri"] = spec.homepage
     spec.metadata["changelog_uri"] =
-      "https://github.com/panorama-ed/scan_left/blob/master/CHANGELOG.md"
+      "https://github.com/panorama-ed/scan_left/blob/main/CHANGELOG.md"
     spec.metadata["documentation_uri"] = "https://rubydoc.info/gems/scan_left"
   else
     raise "RubyGems 2.0 or newer is required to protect against "\
