@@ -1,6 +1,12 @@
 # based on https://github.com/ruby/setup-ruby/blob/master/README.md
 name: Tests
-on: [push, pull_request]
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
 jobs:
   ci:
     name: CI
