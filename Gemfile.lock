@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/panorama-ed/panolint
-  revision: b9c110bad5afd2be17d09053b9cd53b6b9f85748
+  revision: d50a9bedc0c6294b221b79bb163f144fc7f72978
   branch: main
   specs:
     panolint (0.1.3)
@@ -53,7 +53,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
     rspec-support (3.10.0)
-    rubocop (1.18.0)
+    rubocop (1.18.2)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -67,7 +67,7 @@ GEM
     rubocop-performance (1.11.3)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
-    rubocop-rails (2.11.1)
+    rubocop-rails (2.11.2)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
