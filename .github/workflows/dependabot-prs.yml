@@ -1,0 +1,32 @@
+name: Dependabot Pull Request
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, labeled]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+    - name: Fetch Dependabot metadata
+      id: dependabot-metadata
+      uses: dependabot/fetch-metadata@v1.1.0
+      with:
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
+    - name: Approve and merge Dependabot PRs for development dependencies
+      # Auto-merge the PR if either:
+      # a) it has the `development-dependencies` label, which we add for certain
+      #    categories of PRs (see `.github/dependabot.yml`), OR
+      # b) Dependabot has categorized it as a `direct:development` dependency,
+      #    meaning it's in the Gemfile in a `development` or `test` group
+      #
+      # Note that we also do nothing when the PR has already had auto-merge
+      # enabled, to prevent scenarios where this check runs many times (for
+      # instance, because removing `Needs QA` triggers another run, or because
+      # other PRs are merging and causing this to rebase and trigger another
+      # run) and then approves the PR many times, which is confusing and looks
+      # awkward.
+      if: ${{ !github.event.pull_request.auto_merge && (contains(github.event.pull_request.labels.*.name, 'development-dependencies') || steps.dependabot-metadata.outputs.dependency-type == 'direct:development') }}
+      run: gh pr merge --auto --merge "$PR_URL" && gh pr edit "$PR_URL" --remove-label "Needs QA" && gh pr review --approve "$PR_URL"
+      env:
+        PR_URL: ${{github.event.pull_request.html_url}}
+        GITHUB_TOKEN: ${{secrets.PANORAMA_BOT_RW_TOKEN}}
