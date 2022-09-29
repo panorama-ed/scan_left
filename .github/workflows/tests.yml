@@ -13,9 +13,8 @@ jobs:
       fail-fast: false
       matrix:
         # Due to https://github.com/actions/runner/issues/849, we have to use
-        # quotes for '3.0'. Without quotes, CI runs 3.1.1, which fails due to
-        # https://github.com/rubygems/rubygems/issues/5234 as of 2022-02-28.
-        ruby: [ 2.5, 2.6, 2.7, '3.0', jruby ]
+        # quotes for '3.0'. Without quotes, CI runs 3.1.
+        ruby: [ 2.5, 2.6, 2.7, '3.0', 3.1, jruby ]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
