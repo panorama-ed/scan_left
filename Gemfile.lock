@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/panorama-ed/panolint
-  revision: 0e9b6d9f2d41c84c306cae5f33da53f58aa61678
+  revision: 4bd6039b426bf44fc3e0e241854d31540d1f482b
   branch: main
   specs:
-    panolint (0.1.5)
+    panolint (0.1.6)
       brakeman (>= 4.8, < 6.0)
       rubocop (>= 0.83, < 2.0)
       rubocop-performance (~> 1.5)
@@ -19,12 +19,11 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.7)
+    activesupport (7.0.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-      zeitwerk (~> 2.3)
     ast (2.4.2)
     brakeman (5.3.1)
     concurrent-ruby (1.1.10)
@@ -32,7 +31,7 @@ GEM
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     json (2.6.2)
-    minitest (5.15.0)
+    minitest (5.16.3)
     parallel (1.22.1)
     parser (3.1.2.1)
       ast (~> 2.4.1)
@@ -65,22 +64,21 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.21.0)
       parser (>= 3.1.1.0)
-    rubocop-performance (1.13.3)
+    rubocop-performance (1.15.0)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
-    rubocop-rails (2.14.2)
+    rubocop-rails (2.16.1)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
-      rubocop (>= 1.7.0, < 2.0)
+      rubocop (>= 1.33.0, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.10.0)
-      rubocop (~> 1.19)
+    rubocop-rspec (2.13.2)
+      rubocop (~> 1.33)
     ruby-progressbar (1.11.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.3.0)
-    zeitwerk (2.6.0)
 
 PLATFORMS
   ruby
