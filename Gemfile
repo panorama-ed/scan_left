@@ -6,5 +6,5 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gemspec
 
 group :checks do
-  gem "panolint", github: "panorama-ed/panolint", branch: "main"
+  gem "panolint-ruby", github: "panorama-ed/panolint-ruby", branch: "main"
 end
