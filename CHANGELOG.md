@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.1] - 2023-06-05
+### Changed
+- Changed linting development dependency from `panolint` to `panolint-ruby`.
+
 ## [0.3.0] - 2020-06-30
 ### Added
 - Dependabot configuration for automatic dependency update PRs
