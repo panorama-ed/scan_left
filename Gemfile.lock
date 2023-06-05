@@ -8,11 +8,6 @@ GIT
       rubocop-performance (= 1.18.0)
       rubocop-rspec (= 2.22.0)
 
-PATH
-  remote: .
-  specs:
-    scan_left (0.3.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -70,7 +65,6 @@ PLATFORMS
 DEPENDENCIES
   panolint-ruby!
   rspec (~> 3.0)
-  scan_left!
 
 BUNDLED WITH
    2.3.22
