@@ -1,19 +1,19 @@
 GIT
   remote: https://github.com/panorama-ed/panolint-ruby
-  revision: 9703bed63319533fd2dcca8c42c23027b62659ae
+  revision: d798eeecb26cc81d39f9a75ffc87495aec3e339b
   branch: main
   specs:
     panolint-ruby (0)
-      rubocop (= 1.62.1)
+      rubocop (= 1.63.1)
       rubocop-performance (= 1.20.2)
-      rubocop-rspec (= 2.28.0)
+      rubocop-rspec (= 2.29.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
     diff-lcs (1.5.1)
-    json (2.7.1)
+    json (2.7.2)
     language_server-protocol (3.17.0.3)
     parallel (1.24.0)
     parser (3.3.0.5)
@@ -36,7 +36,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.0)
-    rubocop (1.62.1)
+    rubocop (1.63.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -56,12 +56,12 @@ GEM
     rubocop-performance (1.20.2)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.30.0, < 2.0)
-    rubocop-rspec (2.28.0)
+    rubocop-rspec (2.29.1)
       rubocop (~> 1.40)
       rubocop-capybara (~> 2.17)
       rubocop-factory_bot (~> 2.22)
       rubocop-rspec_rails (~> 2.28)
-    rubocop-rspec_rails (2.28.2)
+    rubocop-rspec_rails (2.28.3)
       rubocop (~> 1.40)
     ruby-progressbar (1.13.0)
     unicode-display_width (2.5.0)
