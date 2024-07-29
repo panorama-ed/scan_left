@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/panorama-ed/panolint-ruby
-  revision: 0b8632a2406b9a7f2b7a396cd1eb8dc4f66a54ce
+  revision: 55b395b7863c2a04312e30858d0c8601e05ab2ae
   branch: main
   specs:
     panolint-ruby (0)
