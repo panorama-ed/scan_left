@@ -1,10 +1,10 @@
 GIT
   remote: https://github.com/panorama-ed/panolint-ruby
-  revision: 8d730111a88e543d4c1002500ee067c8bff28500
+  revision: 3ff83ed56cfc7537b3865160d77108d90fb7ef7a
   branch: main
   specs:
     panolint-ruby (0)
-      rubocop (= 1.67.0)
+      rubocop (= 1.72.1)
       rubocop-performance (= 1.21.1)
       rubocop-rspec (= 3.0.3)
 
@@ -13,10 +13,11 @@ GEM
   specs:
     ast (2.4.2)
     diff-lcs (1.5.1)
-    json (2.9.1)
+    json (2.10.1)
     language_server-protocol (3.17.0.4)
+    lint_roller (1.1.0)
     parallel (1.26.3)
-    parser (3.3.7.0)
+    parser (3.3.7.1)
       ast (~> 2.4.1)
       racc
     racc (1.8.1)
@@ -35,16 +36,17 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.0)
-    rubocop (1.67.0)
+    rubocop (1.72.1)
       json (~> 2.3)
-      language_server-protocol (>= 3.17.0)
+      language_server-protocol (~> 3.17.0.2)
+      lint_roller (~> 1.1.0)
       parallel (~> 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 2.4, < 3.0)
-      rubocop-ast (>= 1.32.2, < 2.0)
+      regexp_parser (>= 2.9.3, < 3.0)
+      rubocop-ast (>= 1.38.0, < 2.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 2.4.0, < 3.0)
+      unicode-display_width (>= 2.4.0, < 4.0)
     rubocop-ast (1.38.0)
       parser (>= 3.3.1.0)
     rubocop-performance (1.21.1)
@@ -53,7 +55,9 @@ GEM
     rubocop-rspec (3.0.3)
       rubocop (~> 1.61)
     ruby-progressbar (1.13.0)
-    unicode-display_width (2.6.0)
+    unicode-display_width (3.1.4)
+      unicode-emoji (~> 4.0, >= 4.0.4)
+    unicode-emoji (4.0.4)
 
 PLATFORMS
   ruby
