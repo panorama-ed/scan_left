@@ -1,4 +1,7 @@
 name: Dependabot Pull Request
+permissions:
+  contents: read
+  pull-requests: read
 on:
   pull_request_target:
     types: [opened, synchronize, reopened, labeled]
